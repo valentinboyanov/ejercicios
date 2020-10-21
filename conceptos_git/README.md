@@ -4,8 +4,11 @@
     * [Pregunta 0](#Pregunta-0)
         * [Respuesta 0](#Respuesta-0)
     * [Pregunta 1](#Pregunta-1)
+        * [Respuesta 1](#Respuesta-1)
     * [Pregunta 2](#Pregunta-2)
+        * [Respuesta 2](#Respuesta-2)
     * [Pregunta 3](#Pregunta-3)
+        * [Respuesta 3](#Respuesta-3)
 
 ### Ejercicio
 
