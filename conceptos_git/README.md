@@ -67,6 +67,10 @@ git merge idea
 
 Cambia el diagrama para representar el nuevo estado del repositorio: tanto el grafo de commits como la tabla de branches pueden cambiar.
 
+##### Respuesta 2
+
+![ejercicio_git_respuesta_2](media/ejercicio_git_respuesta_2.svg)
+
 #### Pregunta 3
 
 Nos hemos bebido un par de botellas de vino y ejecutamos
