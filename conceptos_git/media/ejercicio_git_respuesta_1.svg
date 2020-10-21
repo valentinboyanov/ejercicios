@@ -38,7 +38,7 @@
    showgrid="false"
    inkscape:zoom="3.8985716"
    inkscape:cx="752.87754"
-   inkscape:cy="470.90936"
+   inkscape:cy="573.51104"
    inkscape:window-x="1987"
    inkscape:window-y="0"
    inkscape:window-maximized="1"
@@ -1223,15 +1223,15 @@
    id="g7288">
         <path
    id="path7242-5"
-   d="M 18180.999,19870 H 21173 v 2001 h -2992.001 z"
+   d="m 18180.999,19870 h 2568.665 v 2001 h -2568.665 z"
    stroke="none"
    fill="#e6e6e6"
-   style="opacity:0.98;stroke-width:1" /><path
+   style="opacity:0.98;stroke-width:0.926559" /><path
    id="path7252-9"
-   d="m 21173,19870 h 3111 v 2001 h -3111 z"
+   d="M 20749.664,19870 H 24284 v 2001 h -3534.336 z"
    stroke="none"
    fill="#e6e6e6"
-   style="opacity:0.98;stroke-width:1" /><path
+   style="opacity:0.98;stroke-width:1.06587" /><path
    id="path7262-9"
    d="m 24284,19870 h 4230 v 2001 h -4230 z"
    stroke="none"
