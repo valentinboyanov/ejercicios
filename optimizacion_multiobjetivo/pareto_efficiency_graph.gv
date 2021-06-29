@@ -1,0 +1,13 @@
+digraph  {
+  rankdir=LR;
+
+  cirrusa [style=filled, fillcolor=green];
+  strato_y_cia [style=filled, fillcolor=green];
+
+  valenciana_de_cloud -> cloudisa;
+  cirrusa -> valenciana_de_cloud;
+  cirrusa -> cumulonimbus;
+  cirrusa -> cloudisa;
+  strato_y_cia -> cumulonimbus;
+
+}
