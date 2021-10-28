@@ -1,1 +1,5 @@
+mypy
+flake8
+black
+isort==4.3
 apache-beam
