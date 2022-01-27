@@ -68,18 +68,20 @@ def bytes_to_blob_filepath(blob: Tuple[str, bytes]) -> None:
     (blob_name, blob_bytes_data) = blob
     file_like_object = io.BytesIO(base64.b64decode(blob_bytes_data))
 
-    path = os.path.join("./", blob_name)
+    with tempfile.TemporaryDirectory() as tmp_dir:
+        path = os.path.join(tmp_dir, blob_name)
 
-    storage_client = storage.Client.from_service_account_json(
-        "./staging-infra-240711-dd12f315df8d.json"
-    )
-    bucket = storage_client.get_bucket("mapreduce-exercise-valentin")
-    blob_file = bucket.blob(path)
+        with open(path, "wb") as f:
+            f.write(file_like_object.getvalue())
 
-    with open(path, "wb") as f:
-        f.write(file_like_object.getvalue())
+        storage_client = storage.Client.from_service_account_json(
+            "./staging-infra-240711-dd12f315df8d.json"
+        )
+        bucket = storage_client.get_bucket("mapreduce-exercise-valentin")
+        bucket_path = os.path.join("clean_blobs/", blob_name)
+        blob_file = bucket.blob(bucket_path)
 
-    blob_file.upload_from_filename(path)
+        blob_file.upload_from_filename(path)
 
 
 if __name__ == "__main__":
@@ -94,3 +96,10 @@ if __name__ == "__main__":
     print()
 
     bytes_to_blob_filepath(fixed_data_bytes)
+
+    storage_client = storage.Client.from_service_account_json(
+        "./staging-infra-240711-dd12f315df8d.json"
+    )
+    bucket = storage_client.get_bucket("mapreduce-exercise-valentin")
+    all_blobs = list(storage_client.list_blobs(bucket, prefix="blobs/"))
+    print(all_blobs[1].name)
