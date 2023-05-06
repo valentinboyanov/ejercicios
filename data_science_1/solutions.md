@@ -35,7 +35,7 @@
 
         select
             age as age,
-            hours_per_day as hours_per_day,
+            (hours_per_day * 7) as hours_per_week,
             mmol_per_l as mmol_per_l
         from
             pediatric
@@ -47,7 +47,7 @@
                 julianday((select data_collection_day from data_collection_day limit 1))
                 - julianday(ages.birthday)
             ) / 365.25 as age,
-            (exercise.hours_per_week / 7) as hours_per_day,
+            exercise.hours_per_week as hours_per_week,
             thanatol.mmol_per_l as mmol_per_l
         from
             participants
