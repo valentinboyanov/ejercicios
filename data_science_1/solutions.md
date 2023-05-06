@@ -3,6 +3,7 @@
 ## Requisitos
 
 - [sqlite](https://www.sqlite.org/download.html)
+- python3
 
 ## Ejercicio 1
 
@@ -74,7 +75,7 @@
 - [SQLite UNION with Examples, UNION vs. UNION ALL](https://www.sqlitetutorial.net/sqlite-union/)
 - [What is the difference between full outer join and union in SQL?](https://www.quora.com/What-is-the-difference-between-full-outer-join-and-union-in-SQL)
 
-### Ejercicio 2
+## Ejercicio 2
 
 1. Ejecutar los pasos del [Ejercicio 1](#ejercicio-1) y dejar la sesión abierta.
 
@@ -110,3 +111,24 @@ Nota: fíjate que el fichero con este nombre ya está en el repositorio como par
 ### Referencias
 
 - [Export SQLite Database to a CSV file using sqlite3 command line tool (Ubuntu 16.04)](https://deeplearning.lipingyang.org/export-sqlite-database-to-a-csv-file-using-sqlite3-command-line-tool-ubuntu-16-04/)
+
+## Ejercicio 3 - 6
+
+Para el resto de ejercicio es necesario:
+
+1. Crear un entorno en el directorio `env`:
+  ```
+  python3 -m venv env
+  ```
+
+2. Instalar dependencias:
+  ```
+  env/bin/pip install -r requirements.txt
+  ```
+
+3. Lanzar el notebook:
+  ```
+  env/bin/jupyter notebook
+  ```
+
+4. Abrir el notebook `solutions.ipynb`
